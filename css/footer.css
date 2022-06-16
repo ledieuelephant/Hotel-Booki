@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+    justify-content: center;
+}
+
+footer div {
+    width: 480px;
+    height: 200px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer li {
+    margin-top: 15px;
+    font-weight: 100;
+}
+
+footer h3 {
+    margin-top: 40px;
+}
