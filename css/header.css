@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+#heart:hover {
+    animation-name: changefill;
+    animation-duration: 4s;
+}
+
+.bold {
+    font-weight: 900;
+}
+
 .description {
     font-weight: lighter;
     margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+#title {
+    word-wrap: break-word;
 }
 
 #navigation nav {
@@ -61,6 +75,12 @@
     font-weight: bolder;
 }
 
+#searchbar form button {
+    width: 32px;
+    height: 32px;
+    display: none;
+}
+
 #searchbar form input[type=submit] {
     background-color: #0065FC;
     color: white;
@@ -77,8 +97,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 56px;
-    width: 56px;
+    height: 54px;
+    width: 54px;
     border-radius: 20px 0 0 20px;
 }
 
@@ -88,12 +108,22 @@
     margin-bottom: 10px;
 }
 
-#filters a {
-    margin-left: 30px;
+#filters ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filters ul li {
+    margin: 12px;
     height: 50px;
+    font-weight: bolder;
+}
+
+#filters a {
+    align-items: center;
+    display: flex;
     text-decoration: none;
     color: black;
-    font-weight: bolder;
 }
 
 #information {
@@ -103,7 +133,7 @@
 }
 
 #information svg {
-    border: 1px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 100%;
     padding: 5px;
     margin-right: 10px;
@@ -115,11 +145,15 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: transparent;
-    border: 2px #F2F2F2 solid;
+    background-color: white;
+    border: 5px #F2F2F2 solid;
     border-radius: 30px;
     padding: 3px;
 }
+
+/* .btn:hover {
+    background-color: #F2F2F2;
+} */
 
 .btn svg {
     border-radius: 100%;
@@ -133,31 +167,164 @@
     font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
+@media screen and (max-width : 992px) {
+
+    * {
+        cursor: pointer;
     }
 
+    .title, .description {
+        margin-left: 10px;
+    }
+
+    #searchbar, #information {
+        margin-left: 10px;
+    }
+
+    #navigation, .container {
+        width: 100%;
+        margin: 0;
+    }
+    #navigation nav {
+        max-width: 100%;
+    }
+    #filters {
+        display: block;
+    }
+    .filter-title {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 35px;
+        width: 90%;
+        margin: auto;
+    }
+    .description {
+        font-size: 25px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+    }
     #navigation nav {
         display: block;
     }
-
+    #navigation {
+        width: 100%;
+    }
     #logo-container {
-        /* Centré */
+        width: 100%;
         display: flex;
         justify-content: center;
     }
-
-
+    #logo {
+        padding: 0px;
+        margin: 0;
+    }
     #navigation nav ul li {
         width: 50%;
-        padding-bottom: 35px;
+        padding-bottom: 30px;
         text-align: center;
-        border-bottom: solid 1px #F2F2F2;
+        border-bottom: solid 3px #F2F2F2;
         border-top: none;
+        font-size: 30px;
+    }
+
+    .title {
+        margin-top: 30px;
+    }
+
+    #iconegps {
+        width: 105px;
+        height: 105px;
+    }
+
+    #iconegps svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    #searchbar form input[type=submit] {
+        display: none;
+    }
+
+    #searchbar form input[type=text] {
+        height: 101px;
+        width: 80%;
+        font-size: x-large;
+    }
+
+    #searchbar form button {
+        display: inline-block;
+        height: 105px;
+        width: 105px;
+        background-color: #0065FC;
+        border-width: 0;
+        padding: 0;
+        line-height:0px;
+        border-radius: 10px;
+        margin-left: -10px;
+    }
+
+    #searchbar {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+
+    #searchbar form {
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+    }
+
+    .filter-title {
+        font-size: 30px;
         margin-bottom: 20px;
     }
 
-    
+    #filters {
+        width: 90%;
+        margin: auto;
+    }
 
-  }
+    #filters ul li {
+        height: 100px;
+    }
+
+    #filters svg {
+        height: 40px;
+        width: 40px;
+        padding: 35px;
+    }
+
+    #filters p {
+        font-size: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .btn {
+        border-radius: 50px;
+    }
+
+    #information {
+        width: 90%;
+        margin: auto;
+    }
+
+    #information p {
+        font-size: 30px;
+    }
+
+    #information svg {
+        width: 25px;
+        height: 25px;
+        padding: 10px;
+    }
+}

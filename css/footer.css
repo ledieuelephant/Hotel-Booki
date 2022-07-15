@@ -22,3 +22,43 @@ footer li {
 footer h3 {
     margin-top: 40px;
 }
+
+@media screen and (max-width : 992px) {
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    footer div {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    footer h3 {
+        font-size: 35px;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+
+    footer a {
+        font-size: 28px;
+    }
+
+    footer li {
+        margin-bottom: 30px;
+    }
+}
