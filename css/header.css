@@ -146,9 +146,9 @@
     padding: 3px;
 }
 
-/* .btn:hover {
+.btn:hover {
     background-color: #F2F2F2;
-} */
+}
 
 .btn svg {
     border-radius: 100%;
