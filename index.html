@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -18,7 +18,8 @@
                 </div>
                 <ul>
                     <li><a href="#hebergements">Hébergements</a></li>
-                    <li><a href="#activites">Activités</a></li>
+                    <li id="nav-activite"><a href="#activites">Activités</a></li>
+                    <li id="nav-activite-mobile"><a href="#activites-mobile">Activités</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +37,7 @@
                     <input type="text" value="Marseille, France"/>
                     <!-- Bouton de recherche -->
                     <input type="submit" value="Rechercher"/>
-                    <button><svg fill="white" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg></button>
+                    <button><svg fill="white" width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg></button>
                 </form>
             </div>
             <!-- Filtres -->
@@ -84,7 +85,7 @@
                 <div id="hebergements-list">
                     <a class="card-link" href="#">
                         <article class="card-hebergement">
-                            <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                            <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
                             <div class="card-body">
                                 <h4 class="card-title">Auberge La Cannebière</h4>
                                 <h4 class="card-description">Nuit à partir de <span class="bold">25€</span></h4>
@@ -100,7 +101,7 @@
                     </a>
                     <a class="card-link" href="#">
                         <article class="card-hebergement">
-                            <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                            <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                             <div class="card-body">
                                 <h4 class="card-title">Hôtel du port</h4>
                                 <h4 class="card-description">Nuit à partir de 52€</h4>
@@ -116,7 +117,7 @@
                     </a>
                     <a class="card-link" href="#">
                         <article class="card-hebergement">
-                            <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                            <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
                             <div class="card-body">
                                 <h4 class="card-title">Hôtel Les mouettes</h4>
                                 <h4 class="card-description">Nuit à partir de 76€</h4>
@@ -132,7 +133,7 @@
                     </a>
                     <a class="card-link" href="#">
                         <article class="card-hebergement">
-                            <img class="hotel-mer" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                            <img class="hotel-mer" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                             <div class="card-body">
                                 <h4 class="card-title">Hôtel de la mer</h4>
                                 <h4 class="card-description">Nuit à partir de 46€</h4>
@@ -148,7 +149,7 @@
                     </a>
                     <a class="card-link" href="#">
                         <article class="card-hebergement">
-                            <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                            <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                             <div class="card-body">
                                 <h4 class="card-title">Auberge Le Panier</h4>
                                 <h4 class="card-description">Nuit à partir de <span class="bold">23€</span></h4>
@@ -164,7 +165,7 @@
                     </a>
                     <a class="card-link" href="#">
                         <article class="card-hebergement">
-                            <img class="hotel-amina" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                            <img class="hotel-amina" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                             <div class="card-body">
                                 <h4 class="card-title">Hôtel chez Amina</h4>
                                 <h4 class="card-description">Nuit à partir de 96€</h4>
@@ -190,7 +191,7 @@
                 <div id="popular-list">
                     
                         <a href="#" class="card-popular">
-                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                             <div class="popular-body">
                                 <div>
                                     <h4 class="popular-name">Hôtel Le soleil du matin</h4>
@@ -208,7 +209,7 @@
                     
                     
                         <a href="#" class="card-popular">
-                            <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                            <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                             <div class="popular-body">
                                 <div>
                                     <h4 class="popular-name">Au coeur de l'eau Chambres d'hôtes</h4>
@@ -226,7 +227,7 @@
                     
                     
                         <a href="#" class="card-popular">
-                            <img id="img-blanc-bleu" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                            <img id="img-blanc-bleu" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
                             <div class="popular-body">
                                 <div>
                                     <h4 class="popular-name">Hôtel Tout bleu et Blanc</h4>
@@ -252,7 +253,7 @@
                 <div class="activite-block">
                     <div class="activite-width">
                         <a href="#" class="activite-full">
-                            <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                            <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
                             <div class="activite-body">
                                 <p>Vieux port</p>
                             </div>
@@ -260,13 +261,13 @@
                     </div>
                     <div class="activite-width">
                         <a href="#" id="activite-deuxtier">
-                            <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                            <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                             <div class="activite-body">
                                 <p>Fort de Pomègues</p>
                             </div>
                         </a>
                         <a href="#" id="activite-tier">
-                            <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                            <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                             <div class="activite-body">
                                 <p>Îles du Frioul</p>
                             </div>
@@ -276,7 +277,7 @@
                 <div class="activite-block">
                     <div class="activite-width">
                         <a href="#" class="activite-full">
-                            <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                            <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                             <div class="activite-body">
                                 <p>Parc National des Calanques</p>
                             </div>
@@ -284,13 +285,13 @@
                     </div>
                     <div class="activite-width">
                         <a href="#" id="activite-half-un">
-                            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                             <div class="activite-body">
                                 <p>Notre-Dame-de-la-Garde</p>
                             </div> 
                         </a>
                         <a href="#" id="activite-half-deux">
-                            <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                            <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps">
                             <div class="activite-body">
                                 <p>Parc Longchamps</p>
                             </div>
@@ -303,7 +304,7 @@
             <h2>Activités à Marseille</h2>
             <a href="#">
                 <article class="card-activite-mobile">
-                    <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                    <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                     <div class="card-activite-mobile-body">
                         <h3 class="bold">Vieux Port</h3>
                     </div>
@@ -311,7 +312,7 @@
             </a>
             <a href="#">
                 <article class="card-activite-mobile">
-                    <img id="pomegues" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                    <img id="pomegues" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                     <div class="card-activite-mobile-body">
                         <h3 class="bold">Fort de Pomègues</h3>
                     </div>
@@ -319,7 +320,7 @@
             </a>
             <a href="#">
                 <article class="card-activite-mobile">
-                    <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                    <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                     <div class="card-activite-mobile-body">
                         <h3 class="bold">Îles du Frioul</h3>
                     </div>
@@ -327,7 +328,7 @@
             </a>
             <a href="#">
                 <article class="card-activite-mobile">
-                    <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                    <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                     <div class="card-activite-mobile-body">
                         <h3 class="bold">Parc National des Calanques</h3>
                     </div>
@@ -335,7 +336,7 @@
             </a>
             <a href="#">
                 <article class="card-activite-mobile">
-                    <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                    <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                     <div class="card-activite-mobile-body">
                         <h3 class="bold">Notre-Dame-de-la-Garde</h3>
                     </div>
@@ -343,7 +344,7 @@
             </a>
             <a href="#">
                 <article class="card-activite-mobile">
-                    <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                    <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps">
                     <div class="card-activite-mobile-body">
                         <h3 class="bold">Parc Longchamps</h3>
                     </div>

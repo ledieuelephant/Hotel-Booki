@@ -498,12 +498,12 @@ a .card-popular {
     }
 
     #popular-title svg {
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
     }
 
     #popular-title h2 {
-        font-size: 35px;
+        font-size: 17px;
         font-weight: 900;
     }
 
@@ -517,12 +517,20 @@ a .card-popular {
     }
 
     .popular-stars svg {
-        width: 32px;
-        height: 32px;
+        width: 11px;
+        height: 11px;
     }
 
     .popular-body {
         justify-content: space-around;
+    }
+
+    .popular-name {
+        font-size: 15px;
+    }
+
+    .popular-description {
+        font-size: 14px;
     }
 
     #popular-list {
@@ -533,9 +541,9 @@ a .card-popular {
     .card-popular {
         margin: auto;
         width: 90%;
-        height: 290px;
-        border : white solid 13px;
-        border-radius: 50px;
+        height: 150px;
+        border : white solid 5px;
+        border-radius: 25px;
     }
 
     .card-popular img {
@@ -571,29 +579,36 @@ a .card-popular {
 
     .card-hebergement {
         width: 100%;
-        height: 400px;
-        border-radius: 50px;
+        height: 200px;
+        border-radius: 25px;
     }
-
 
 
     .card-body {
-        height: 45%;
-        padding-left: 30px;
+        height: 35%;
+        padding-left: 15px;
+        line-height: 15px;
     }
 
     .card-hebergement img {
-        top: -80px;
+        top: -40px;
     }
 
     .card-hebergement img.hotel-mer {
-        top: -210px;
+        top: -105px;
     }
 
     .card-hebergement img.hotel-amina {
-        top: -440px;
+        top: -220px;
     }
 
+    .card-title {
+        font-size: 13px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
 
     #hebergement-marseille {
         margin: auto;
@@ -601,15 +616,16 @@ a .card-popular {
     }
 
     .stars svg {
-        width: 32px;
-        height: 32px;
-        margin-left: 2px;
+        width: 13px;
+        height: 13px;
+        margin-left: 1px;
     }
 
     #afficher-plus {
-        margin-top: 30px;
+        margin-top: 15px;
         display: block;
         margin-left: 0px;
+        font-size: 13px;
     }
 
     #activites {
@@ -627,28 +643,28 @@ a .card-popular {
     }
 
     #activites-mobile h2 {
-        font-size: 40px;
-        margin-bottom: 30px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .card-activite-mobile {
         width: 100%;
-        height: 380px;
+        height: 190px;
         position: relative;
         overflow: hidden;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
-        border-radius: 40px;
+        border-radius: 20px;
         color: black;
     }
 
     .card-activite-mobile img {
         width: 100%;
         position: absolute;
-        top: -50px;
+        top: -20px;
     }
 
     #pomegues {
-        top: -300px;
+        top: -200px;
     }
 
     .card-activite-mobile-body {
@@ -659,17 +675,18 @@ a .card-popular {
         bottom: 0;
         display: flex;
         align-items: center;
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     .card-activite-mobile-body h3 {
-        font-size: 30px;
+        font-size: 15px;
+        font-weight: bold;
     }
 
     #hebergement-marseille h2 {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 35px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
     }
 
     .card-popular:nth-child(3){

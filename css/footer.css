@@ -37,6 +37,7 @@ footer h3 {
 
 @media screen and (max-width : 768px) {
     footer {
+        padding-top: 10px;
         display: flex;
         flex-direction: column;
     }
@@ -45,20 +46,24 @@ footer h3 {
         width: 90%;
         margin: auto;
         height: auto;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
     }
 
     footer h3 {
-        font-size: 35px;
-        margin-bottom: 60px;
-        margin-top: 60px;
+        font-size: 17px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     footer a {
-        font-size: 28px;
+        font-size: 14px;
     }
 
     footer li {
+        margin-bottom: 15px;
+    }
+
+    footer div:nth-last-child(1){
         margin-bottom: 30px;
     }
 }
