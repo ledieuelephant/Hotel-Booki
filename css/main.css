@@ -165,6 +165,12 @@ h2 {
     border: white 5px solid;
     border-radius: 25px 25px 25px 25px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
+    background-color: #FFF;
+    transition: border-color 1s;
+}
+
+.card-hebergement .card-body {
+    transition: background-color 1s;
 }
 
 .card-hebergement:hover .card-body {
@@ -292,6 +298,10 @@ a .card-popular {
     position: relative;
     overflow: hidden;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
+}
+
+.activite-body {
+    transition: background-color 1s;
 }
 
 #activite-tier:hover .activite-body {
