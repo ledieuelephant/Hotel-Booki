@@ -426,12 +426,6 @@ a .card-popular {
     }
 }
 
-@media screen and (max-width : 1342px) {
-    #popular {
-        background-color: #FFFFFF;
-    }
-}
-
 @media screen and (max-width : 1300px) {
     #activites .title {
         text-align: center;
